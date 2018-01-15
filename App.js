@@ -1,10 +1,27 @@
 import React from 'react';
-import Main from './app/components/main.js';
+import {
+  Platform,
+  StyleSheet,
+  Text,
+  View,
+  ScrollView,
+  Image
+} from 'react-native';
+import Header from './app/components/Header';
 
-export default class App extends Component<{}> {
+export default class App extends React.Component{
   render() {
     return (
-      <Main />
+      <ScrollView style = {styles.container}>
+        <Header />
+      </ScrollView>
     );
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor:'#fff',
+  }
+});
