@@ -1,20 +1,25 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {
   Platform,
   StyleSheet,
   Text,
   View,
-  ScrollView,
+  ScrollView
 } from 'react-native';
+
 import Header from './app/components/Header';
 import Banner from './app/components/Banner';
+import ContentContainer from './app/components/ContentContainer';
 
-export default class App extends React.Component{
+
+export default class App extends React.Component {
   render() {
     return (
-      <ScrollView style = {styles.container}>
-        <Header />
-        <Banner />
+      <ScrollView style={styles.container}>
+        <Header/>
+        <Banner/>
+        <ContentContainer />
+
       </ScrollView>
     );
   }
@@ -23,6 +28,6 @@ export default class App extends React.Component{
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor:'#fff',
-  }
+    backgroundColor: '#FFF',
+  },
 });
