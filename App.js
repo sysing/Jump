@@ -5,7 +5,6 @@ import {
   Text,
   View,
   ScrollView,
-  Image
 } from 'react-native';
 import Header from './app/components/Header';
 import Banner from './app/components/Banner';

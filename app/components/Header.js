@@ -7,15 +7,15 @@ import {
   Image,
 } from 'react-native';
 
-export default class App extends React.Component{
+export default class Header extends React.Component{
   render() {
     return (
       <View style={styles.header}>
         <Image
-          source={require ('../img/cart.png')}
+          source={require ('../img/logo.jpg')}
           style={styles.cart}
         />
-        <Text style={styles.logo}> e-commerce </Text>
+        <Text style={styles.logo}> JUMP </Text>
       </View>
     );
   }
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
   header: {
     height: 80,
     marginTop: 20,
-    backgroundColor: '#fff',
+    backgroundColor: 'white',
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
